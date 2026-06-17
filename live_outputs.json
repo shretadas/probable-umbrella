@@ -1,0 +1,103 @@
+{
+  "risk": 0.9802530407905579,
+  "uncertainty": 0.09673980623483658,
+  "risk_projection": {
+    "7d": {
+      "risk_now": 0.980253,
+      "risk_at_day_n": 0.98004,
+      "absolute_reduction": 0.000213,
+      "relative_reduction_percent": 0.02
+    },
+    "14d": {
+      "risk_now": 0.980253,
+      "risk_at_day_n": 0.979827,
+      "absolute_reduction": 0.000427,
+      "relative_reduction_percent": 0.04
+    },
+    "30d": {
+      "risk_now": 0.980253,
+      "risk_at_day_n": 0.979339,
+      "absolute_reduction": 0.000914,
+      "relative_reduction_percent": 0.09
+    }
+  },
+  "dqn_action": "screen_time_reduction",
+  "cheat_day": {
+    "CDES": 0.0003,
+    "metabolic_buffer_score": 0.4152,
+    "unlocked": false
+  },
+  "recommendations": [
+    {
+      "action": "Post-meal walking",
+      "quantity": "20 minutes",
+      "timing": "within 30 minutes after lunch and dinner",
+      "who_ada_reference": "WHO 2023 Physical Activity Guidelines",
+      "expected_risk_impact_percent": 4.8,
+      "priority": 1
+    },
+    {
+      "action": "Reduce refined carbohydrate load",
+      "quantity": "80 g reduction per day",
+        "regen_attempts": 1,
+        "ollama_live_successes": 1,
+        "ollama_cache_fallbacks": 0,
+        "recs_source": "ollama_live",
+      "timing": "starting at dinner today",
+      "who_ada_reference": "ADA Standards of Care 2024 Section 5",
+      "expected_risk_impact_percent": 3.9,
+      "priority": 2
+    }
+  ],
+  "nbs": 0.4638,
+  "gdai": 1.3333,
+  "sqgi": 0.225,
+  "compliance_streak": 7,
+  "nbs_breakdown": {
+    "protein": 0.632,
+    "fiber": 0.32,
+    "carb_quality": 0.4286,
+    "hydration": 0.3942
+  },
+  "metabolic_mins_7day_avg": 14.24,
+  "sleep_hrs": 5.5,
+  "tdee": 2200.0,
+  "history": {
+    "day": [1, 2, 3, 4, 5, 6, 7],
+    "gdai": [1.413, 1.393, 1.383, 1.363, 1.353, 1.343, 1.333]
+  },
+  "compliance_history": [0.55, 0.58, 0.6, 0.62, 0.64, 0.65, 0.67],
+  "mc_dropout": {
+    "samples": 50,
+    "std": 0.09673980623483658,
+    "source": "torch_model:model"
+  },
+  "regen_attempts": 1,
+  "ollama_live_successes": 1,
+  "ollama_cache_fallbacks": 0,
+  "recs_source": "ollama_live",
+  "demo_patient": {
+    "Pregnancies": 6,
+    "Glucose": 168,
+    "BloodPressure": 82,
+    "SkinThickness": 35,
+    "Insulin": 0,
+    "BMI": 33.6,
+    "DiabetesPedigreeFunction": 0.627,
+    "Age": 50,
+    "daily_steps": 3200,
+    "physical_activity_hrs_per_week": 1.5,
+    "sleep_hrs_per_night": 5.5,
+    "screen_time_hrs_per_day": 7,
+    "water_intake_litres": 1.2,
+    "meals_per_day": 2,
+    "fast_food_days_per_week": 4,
+    "smoking_status": 1,
+    "alcohol_units_per_week": 8,
+    "carbs_grams_per_day": 320,
+    "protein_grams_per_day": 45,
+    "fiber_grams_per_day": 8,
+    "weight_kg": 89,
+    "height_cm": 163
+  }
+}
